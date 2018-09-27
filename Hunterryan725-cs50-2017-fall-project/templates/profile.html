@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+
+
+    {% for user in users %}
+        <div><img src="/static/upload/{{ user.image }}" style="width:300px;height:360px;"></div>
+        <br><b>Name:</b> {{ user.firstname }}, {{ user.lastname }}</br>
+        <br><b>University:</b> {{ user.university }}</br>
+        <br><b>Graduation Year:</b> {{ user.graduation }}</br>
+        <br><b>Major:</b> {{ user.major }}</br>
+        <br><b>Email:</b> {{ user.email }}</br><div></div><br></br>
+    {% endfor %}
+
+    <form action="/profile" method="post" enctype="multipart/form-data" >
+        <span class="btn btn-default btn-file">
+        Browse <input type="file" name="image">
+        </span>
+        <input type="submit" value="Upload your image" class="btn btn-primary">
+    </form>
+
+{% endblock %}

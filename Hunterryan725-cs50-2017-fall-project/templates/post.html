@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Post
+{% endblock %}
+
+{% block main %}
+
+    <form action="/post" name="post" method="post">
+        <div>
+
+            <select name="category" type="text">
+                <option value="academics">Academics</option>
+                <option value="athletics">Athletics</option>
+                <option value="residentialcollege">Residential College</option>
+                <option value="marketplace">Marketplace</option>
+                <option value="professional">Professional</option>
+            </select><br></br><div></div>
+
+            <select name="thread" type="text">
+                <option value="cognitivescience">Cognitive Science</option>
+                <option value="computerscience">Computer Science</option>
+                <option value="economics">Economics</option>
+                <option value="Engineering">Engineering</option>
+                <option value="epe">Ethics, Politics, & Economics</option>
+                <option value="engineering">Engineering</option>
+                <option value="foreignlanguages">Foreign Languages</option>
+                <option value="globalaffairs">Global Affairs</option>
+                <option value="history">History</option>
+                <option value="lifesciences">Life Sciences</option>
+                <option value="physicalsciences">Physical Sciences</option>
+                <option value="politicalscience">Political Science</option>
+                <option value="psychology">Psychology</option>
+                <option value="baseball">Baseball</option>
+                <option value="basketball">Basketball</option>
+                <option value="crew">Crew</option>
+                <option value="cross country">Cross Country</option>
+                <option value="football">Football</option>
+                <option value="lacrosse">Lacrosse</option>
+                <option value="soccer">Soccer</option>
+                <option value="softball">Softball</option>
+                <option value="squash">Squash</option>
+                <option value="swimmingdiving">Swimming and Diving</option>
+                <option value="tennis">Tennis</option>
+                <option value="trackfield">Track and Field</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="benjaminfranklin">Benjamin Franklin</option>
+                <option value="berkeley">Berkeley</option>
+                <option value="branford">Branford</option>
+                <option value="davenport">Davenport</option>
+                <option value="ezrastiles">Ezra Stiles</option>
+                <option value="gracehopper">Grace Hopper</option>
+                <option value="jonathanedwards">Jonathan Edwards</option>
+                <option value="morse">Morse</option>
+                <option value="paulimurray">Pauli Murray</option>
+                <option value="pierson">Pierson</option>
+                <option value="saybrook">Saybrook</option>
+                <option value="silliman">Silliman</option>
+                <option value="timothydwight">Timothy Dwight</option>
+                <option value="trumbull">Trumbull</option>
+                <option value="appliances">Appliances</option>
+                <option value="borrow">Borrow</option>
+                <option value="electronics">Electronics</option>
+                <option value="free">Free</option>
+                <option value="furniture">Furniture</option>
+                <option value="instruments">Instruments</option>
+                <option value="miscellaneous">Miscellaneous</option>
+                <option value="tickets">Tickets</option>
+                <option value="textbooks">Textbooks</option>
+                <option value="wanted">Wanted</option>
+                <option value="career">Career</option>
+                <option value="graduateschool">Graduate School</option>
+                <option value="internships">Internships</option>
+                <option value="studyabroad">Study Abroad</option>
+            </select>
+            <br></br><div></div>
+            <!--<div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="thread" placeholder="Thread" type="text"/>
+            </div>-->
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="title" placeholder="Title" type="text"/>
+        </div>
+        <div class="form-group">
+            <textarea rows = "5" cols = "50" name = "description">Description</textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Post</button>
+    </form>
+{% endblock %}

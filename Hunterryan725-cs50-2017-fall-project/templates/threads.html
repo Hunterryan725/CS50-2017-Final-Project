@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Forums
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: #ffffff;}
+    </style>
+
+
+    {% for thread in threads %}
+    <font size="+4"><b>Title: {{ thread.title }}</b></font>
+    {% endfor %}</b>
+
+
+    <table class="threads">
+        <thead>
+            <tr>
+                <th>Poster</th>
+                <th>Content</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for thread in threads %}
+                <tr>
+                    <td><a href="/profile/{{ thread.id }}">{{ thread.firstname }}, {{ thread.lastname }}</a></td>
+                    <td>{{ thread.description }}</td>
+                    <td>{{ thread.time }}</td>
+                </tr>
+            {% endfor %}
+            {% for comment in comments %}
+                <tr>
+                    <td><a href="/profile/{{ comment.id }}">{{ comment.firstname }}, {{comment.lastname }}</a></td>
+                    <td>{{ comment.comment }}</td>
+                    <td>{{ comment.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <form name="post" method="post">
+        <div class="form-group">
+                <textarea rows = "5" cols = "50" name = "comment">Comment</textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Post</button>
+    </form>
+{% endblock %}

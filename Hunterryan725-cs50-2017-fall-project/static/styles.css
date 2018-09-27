@@ -1,0 +1,147 @@
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .white
+{
+    color: #FFFFFF;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+.center-block {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+
+    margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+
+table td, th {
+    border: 2px solid #000000;
+    padding: 8px;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #0F4D92;
+    color: white;
+}
+
+.academics {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    float: left;
+    margin: 8px;
+}
+
+
+.athletics {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    float: left;
+    margin: 8px;
+}
+
+.rc {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    float: left;
+    margin: 8px;
+}
+
+.marketplace {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    float: left;
+    margin: 8px;
+}
+
+.professional {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    float: left;
+    margin: 8px;
+}
+
+.forums {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    margin: 10px;
+}
+
+.threads {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    margin: 10px;
+}
+
+.mythreads {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    margin: 10px;
+}
+
+.userthreads {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    margin: 10px;
+}
+
+body
+{
+background-image: url("http://ixfocus.com/projects/ZocialWifi/images/background-website-light-blue-wallpapers-background-2.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+

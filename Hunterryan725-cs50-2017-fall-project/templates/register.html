@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+    <form action="/register" method="post" name="registration" onsubmit="return validateForm()">
+
+        <div class="form-group row center-block">
+            <input class="form-control" name="firstname" placeholder="First Name" type="text" size="12"/>
+            <input class="form-control" name="lastname" placeholder="Last Name" type="text" size="12"/>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="email" placeholder="Email" type="text" size="18"/>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password" size="18"/>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Password (again)" type="password" size="18"/>
+        </div>
+
+            <div class="form-group">University: <select name="university" type="text">
+                <option value="Yale University">Yale University</option>
+            </select></div>
+
+            <div class="form-group">
+                Gaduation Year: <select name="graduation" type="text">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="Staff">Staff</option>
+            </select></div>
+
+            <div class="form-group">
+                Major: <select name="major" type="text">
+                <option value="Cognitive Science">Cognitive Science</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Economics">Economics</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Ethics, Politics, & Economics">Ethics, Politics, & Economics</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Foreign Languages">Foreign Languages</option>
+                <option value="Global Affairs">Global Affairs</option>
+                <option value="History">History</option>
+                <option value="Life Sciences">Life Sciences</option>
+                <option value="Physical Sciences">Physical Sciences</option>
+                <option value="Political Science">Political Science</option>
+                <option value="Psychology">Psychology</option>
+            </select></div>
+
+        <button class="btn btn-primary" type="submit">Register</button>
+
+    </form>
+
+{% endblock %}

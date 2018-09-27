@@ -1,0 +1,255 @@
+.academics {
+    width:200px;
+   	margin:auto;
+    font-size:14px; }
+
+
+
+.academics tr:nth-child(even){background-color: #f2f2f2;}
+
+.academics tr:hover {background-color: #ddd;}
+
+
+
+
+
+<!-- HTTPS required. HTTP will give a 403 forbidden response -->
+<!--
+<script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
+
+
+
+<script>
+  // initialize Account Kit with CSRF protection
+  AccountKit_OnInteractive = function(){
+    AccountKit.init(
+      {
+        appId:"{{1933591790228665}}",
+        state:"{{092372511211324}}",
+        version:"{{v2.11}}",
+        fbAppEventsEnabled:true,
+        debug:true,
+        redirect:"{{"/"}}"
+
+      }
+    );
+  };
+
+  // login callback
+  function loginCallback(response) {
+    if (response.status === "PARTIALLY_AUTHENTICATED") {
+      var code = response.code;
+      var csrf = response.state;
+      // Send code to server to exchange for access token
+    }
+    else if (response.status === "NOT_AUTHENTICATED") {
+      // handle authentication failure
+    }
+    else if (response.status === "BAD_PARAMS") {
+      // handle bad parameters
+    }
+  }
+
+  // phone form submission handler
+  function smsLogin() {
+    var countryCode = document.getElementById("country_code").value;
+    var phoneNumber = document.getElementById("phone_number").value;
+    AccountKit.login(
+      'PHONE',
+      {countryCode: countryCode, phoneNumber: phoneNumber}, // will use default values if not specified
+      loginCallback
+    );
+  }
+
+
+  // email form submission handler
+  function emailLogin() {
+    var emailAddress = document.getElementById("email").value;
+    AccountKit.login(
+      'EMAIL',
+      {emailAddress: emailAddress},
+      loginCallback
+    );
+  }
+</script>
+-->
+
+
+
+
+
+
+
+"""
+        # -*- coding: utf-8 -*-
+
+    """
+        neutrino_api.models.bad_word_filter_response
+        This file was automatically generated for NeutrinoAPI by APIMATIC v2.0 ( https://apimatic.io )
+    """
+
+
+        class BadWordFilterResponse(object):
+
+            """Implementation of the 'Bad Word Filter Response' model.
+            TODO: type model description here.
+            Attributes:
+                bad_words_list (list of string): Array of the bad words found
+                bad_words_total (int): Total number of bad words detected
+                censored_content (string): The censored content (only set if
+                    censor-character has been set)
+                is_bad (bool): Does the text contain bad words
+            """
+
+            # Create a mapping from Model property names to API property names
+            _names = {
+                "bad_words_list" : "badWordsList",
+                "bad_words_total" : "badWordsTotal",
+                "censored_content" : "censoredContent",
+                "is_bad" : "isBad"
+            }
+
+            def __init__(self,
+                         bad_words_list=None,
+                         bad_words_total=None,
+                         censored_content=None,
+                         is_bad=None):
+                """Constructor for the BadWordFilterResponse class"""
+
+                # Initialize members of the class
+                self.bad_words_list = bad_words_list
+                self.bad_words_total = bad_words_total
+                self.censored_content = censored_content
+                self.is_bad = is_bad
+
+
+            @classmethod
+            def from_dictionary(cls,
+                                dictionary):
+                """Creates an instance of this model from a dictionary
+                Args:
+                    dictionary (dictionary): A dictionary representation of the object as
+                    obtained from the deserialization of the server's response. The keys
+                    MUST match property names in the API description.
+                Returns:
+                    object: An instance of this structure class.
+                """
+                if dictionary is None:
+                    return None
+
+                # Extract variables from the dictionary
+                bad_words_list = dictionary.get("badWordsList")
+                bad_words_total = dictionary.get("badWordsTotal")
+                censored_content = dictionary.get("censoredContent")
+                is_bad = dictionary.get("isBad")
+
+                # Return an object of this model
+                return cls(bad_words_list,
+                           bad_words_total,
+                           censored_content,
+                           is_bad)"""
+
+
+
+
+                  <div class="form-group">
+                    <input autocomplete="off" autofocus class="form-control" name="thread" placeholder="Thread" type="text"/>
+                </div>
+
+
+                <fieldset>
+                <select name="category" type="text">
+                    <option value="academics">Academics</option>
+                    <option value="athletics">Athletics</option>
+                    <option value="residentialcollege">Residential College</option>
+                    <option value="marketplace">Marketplace</option>
+                    <option value="professional">Professional</option>
+                </select>
+
+                <select name="choices" id="choices">
+            <!-- populated using JavaScript -->
+                </select>
+            </fieldset>
+
+
+<!-- HTTPS required. HTTP will give a 403 forbidden response -->
+
+<script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
+
+<script>
+  // initialize Account Kit with CSRF protection
+  AccountKit_OnInteractive = function(){
+    AccountKit.init(
+      {
+        appId:"{{1933591790228665}}",
+        state:"{{092372511211324}}",
+        version:"{{v2.11}}",
+        fbAppEventsEnabled:true,
+        debug:true,
+        redirect:"{{"/"}}"
+
+      }
+    );
+  };
+
+  // login callback
+  function loginCallback(response) {
+    if (response.status === "PARTIALLY_AUTHENTICATED") {
+      var code = response.code;
+      var csrf = response.state;
+      // Send code to server to exchange for access token
+    }
+    else if (response.status === "NOT_AUTHENTICATED") {
+      // handle authentication failure
+    }
+    else if (response.status === "BAD_PARAMS") {
+      // handle bad parameters
+    }
+  }
+
+  // phone form submission handler
+  function smsLogin() {
+    var countryCode = document.getElementById("country_code").value;
+    var phoneNumber = document.getElementById("phone_number").value;
+    AccountKit.login(
+      'PHONE',
+      {countryCode: countryCode, phoneNumber: phoneNumber}, // will use default values if not specified
+      loginCallback
+    );
+  }
+
+
+  // email form submission handler
+  function emailLogin() {
+    var emailAddress = document.getElementById("email").value;
+    AccountKit.login(
+      'EMAIL',
+      {emailAddress: emailAddress},
+      loginCallback
+    );
+  }
+
+
+  <img style= width="3%" height="3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/981px-Yale_University_Shield_1.svg.png"/>
+
+          <img src="/workspace/project/upload/{{ user.image }}/".jpg>
+
+fs = require('fs');
+http = require('http');
+url = require('url');
+
+http.createServer(function(req, res){
+  var request = url.parse(req.url, true);
+  var action = request.pathname;
+
+  if (action == '/project/IMG_3573.jpg') {
+     var img = fs.readFileSync('/project/IMG_3573.jpg');
+     res.writeHead(200, {'Content-Type': 'image/jpg' });
+     res.end(img, 'binary');
+  } else {
+     res.writeHead(200, {'Content-Type': 'text/plain' });
+     res.end('Hello World \n');
+  }
+}).listen(8080, '127.0.0.1');
+
+<!--<div><img src="/static/profilepicture/IMG_3573.jpg" style="width:300px;height:360px;"></div>-->

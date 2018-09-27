@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Posts
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: #ffffff;}
+    </style>
+
+
+    <table class="userthreads">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Poster</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for thread in threads %}
+                <tr>
+                    <td><a href="/forums/{{ thread.thread }}/{{ thread.threadid }}"> {{ thread.title }} </a></td>
+                    <td>{{ thread.firstname }}, {{thread.lastname}}</td>
+                    <td>{{ thread.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

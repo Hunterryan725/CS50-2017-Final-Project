@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Forums
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: #ffffff;}
+    </style>
+
+    <table class="mythreads">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for thread in threads %}
+                <tr>
+                    <td><a href="/forums/{{ thread.thread }}/{{ thread.threadid }}"> {{ thread.title }} </a></td>
+                    <td>{{ thread.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
